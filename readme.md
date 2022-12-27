@@ -1,10 +1,11 @@
 # README
 
 ## LOCAL QUICKSTART
-* build and serve the app:
-	`dotnet run`
-* then view swagger on localhost: [http://localhost:5000/WeatherForecast](http://localhost:5000/WeatherForecast)
-
+```sh
+# build and serve the app:
+dotnet run
+```
+* then view on localhost: [http://localhost:5000/WeatherForecast](http://localhost:5000/WeatherForecast)
 
 ## DEPLOY TO DOCKER
 ```sh
@@ -15,9 +16,9 @@ docker build -t amandaryman/aspdotnet-api .
 docker run --rm -it -p 5000:80 amandaryman/aspdotnet-api
 
 # publish
-
-
+docker push amandaryman/aspdotnet-api
 ```
+
 ## TO DO
 
 ## RESOURCES
